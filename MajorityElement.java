@@ -1,7 +1,11 @@
 package com.easy;
 
 public class MajorityElement {
-	public int majorityElement(int[] nums) {
+	public static void main(String[] args) {
+		//Majority element that occurs more than nums.length/2
+		System.out.println(majorityElement(new int[]{2,2,3,3,3,3,2}));
+	}
+	public static int majorityElement(int[] nums) {
 		int n = nums.length;
 		for (int i = 0; i < n; i++) {
 			if (nums[i] == 0)
